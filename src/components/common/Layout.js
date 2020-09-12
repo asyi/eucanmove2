@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Search from './Search'
+
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
