@@ -47,7 +47,9 @@ Index.propTypes = {
 export default Index
 
 // This page query loads all posts sorted descending by published date
-// The `limit` and `skip` values are used for pagination
+// The `limit` and `skip` values are used for pagination and the filter
+// hides the data schema stub, which seems to be a plugin bug
+// https://www.gitmemory.com/issue/TryGhost/gatsby-starter-ghost/227/674378655
 export const pageQuery = graphql`
   query GhostPostQuery($limit: Int!, $skip: Int!) {
     allGhostPost(
