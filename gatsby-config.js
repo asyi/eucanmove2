@@ -70,21 +70,21 @@ module.exports = {
         {
             resolve: `gatsby-plugin-lunr`,
             options: {
-              languages: [
-                {
-                  name: 'en'
-                }
-              ],
-              fields: [
-                { name: 'title', store: true, attributes: { boost: 20 }}
-              ],
-              resolvers: {
+                languages: [
+                    {
+                        name: `en`,
+                    },
+                ],
+                fields: [
+                    { name: `title`, store: true, attributes: { boost: 20 } },
+                ],
+                resolvers: {
                     GhostPost: {
-                  title: node => node.title
-                }
-              }
-            }
-          }
+                        title: node => node.title,
+                    },
+                },
+            },
+        },
         /**
          *  Utility Plugins
          */
